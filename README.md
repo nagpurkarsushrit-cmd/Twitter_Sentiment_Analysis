@@ -1,14 +1,4 @@
-# Twitter_Sentiment_Analysis
-import re    # for regular expressions
-import nltk  # for text manipulation
-import string
-import warnings
-import numpy as np
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
+OBJECTIVE:
+The objective of this task is to detect hate speech in tweets. For the sake of simplicity, we say a tweet contains hate speech if it has a racist or sexist sentiment associated with it. So, the task is to classify racist or sexist tweets from other tweets.
 
-pd.set_option("display.max_colwidth", 200)
-warnings.filterwarnings("ignore", category=DeprecationWarning)
-
-%matplotlib inline
+Formally, given a training sample of tweets and labels, where label ‘1’ denotes the tweet is racist/sexist and label ‘0’ denotes the tweet is not racist/sexist, your objective is to predict the labels on the given test dataset
